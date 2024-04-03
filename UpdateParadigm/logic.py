@@ -15,7 +15,7 @@ def update_grid(grid):
                 if neighbors_sum < 2 or neighbors_sum > 3:
                     new_grid[i, j] = 0
             else:
-                if neighbors_sum == 3:
+                if neighbors_sum == 2 or neighbors_sum == 3:
                     new_grid[i, j] = 1
     return new_grid
 

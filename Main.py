@@ -14,7 +14,7 @@ grid = init_grid()
 
 # Initialisation de l'affichage
 fig, ax = plt.subplots()
-img = ax.imshow(grid, interpolation='nearest')
-ani = animation.FuncAnimation(fig, animate, fargs=(img, grid), frames=100, interval=100)
+img = ax.imshow(grid, interpolation='nearest', cmap='viridis', vmin=0, vmax=1)
+ani = animation.FuncAnimation(fig, animate, fargs=(img, grid), frames=10, interval=5000)
 plt.show()
 
